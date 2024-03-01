@@ -1,0 +1,129 @@
+.wrapper {
+    font-size: inherit;
+    &--layout {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+}
+
+.app {
+    &__annoucement {
+        padding: 4px 20px;
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        &--warning {
+            background: #fff3cd;
+            color: #856404;
+        }
+        &--danger {
+            color: #721c24;
+            background: #f8d7da;
+        }
+    }
+}
+
+.header {
+    &--layout {
+        top: 0;
+        padding: 0px;
+        box-shadow: 0 0.125rem 0.125rem -0.0625rem rgba(0, 0, 0, 0.149);
+        justify-content: flex-start;
+        z-index: 999;
+        height: var(--default-header-height);
+    }
+    &--light {
+        background-color: white;
+    }
+
+    &--exist-annoucement {
+        height: calc(var(--default-header-height) + var(--annountcement-height));
+    }
+
+    &__item {
+        height: var(--default-header-height);
+        display: flex;
+        &--hover:hover {
+            transition: .3s;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+    &__search-icon {
+        position: absolute;
+        left: 20px;
+        top: 0;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    &__input-search {
+        width: 300px;
+        height: calc(1.5em + .75rem + 2px);
+        border-radius: 15px;
+        background: #EFF2F5 !important;
+        font-size: 15px;
+        font-weight: 300;
+        padding-left: 40px;
+        box-shadow: none !important;
+        border: none;
+    }
+
+    @media only screen and (max-width: 768px) {
+        &__item {
+            display: none;
+        }
+      }
+}
+
+
+.main {
+    &-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        .page {
+            flex: 1;
+            padding-left: var(--sidebar-min-max-width);
+            padding-bottom: 80px;
+        }
+    }
+}
+
+.content-page {
+    padding: 20px;
+    margin: 0px;
+    &--small {
+        padding: 0px;
+        margin: 0px;
+    }
+    &--medium {
+        padding: 10px;
+    }
+    &--large {
+        padding: 20px;
+    }
+    .header-content {
+        margin-bottom: 20px;
+    }
+    .description-text {
+        color: var(--neutral-600);
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 800px;
+        margin-top: 15px;
+        display: block;
+    }
+}
+
+.article-popover-profile {
+    min-width: 150px;
+    li {
+        user-select: none;
+        cursor: pointer;
+        padding: 10px;
+        border-radius: 4px;
+        &:hover {
+            background: rgba(0, 0, 0, 0.1);
+        }
+    }
+}

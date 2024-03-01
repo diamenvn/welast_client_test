@@ -1,0 +1,134 @@
+.d-flex {
+    display: flex;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.co-white {
+    color: #fff;
+}
+
+.co-white-i {
+    color: #fff !important;
+}
+
+.co-grey-200 {
+    color: #868686;
+}
+
+.co-neutral-800 {
+    color: var(--neutral-800);
+}
+
+.co-neutral-600 {
+    color: var(--neutral-600);
+}
+
+.co-primary {
+    color: var(--purple-600);
+}
+ul {
+    list-style-type: none;
+    &.default {
+        list-style-type: disc;
+    }
+}
+
+.br-10 {
+    border-radius: 10px;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-hover:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    user-select: none;
+}
+
+.text-underline {
+    text-decoration: underline;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.hover-fw-600 {
+    &:hover {
+        font-weight: 600;
+        transform: scale(1.1);
+        transition: .3s;
+        cursor: pointer;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.border-width-5px {
+    border-width: 5px !important;
+}
+
+.z-index-10 {
+    z-index: 10;
+}
+
+.min-height-100 {
+    min-height: 100vh;
+}
+

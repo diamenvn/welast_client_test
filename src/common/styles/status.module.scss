@@ -1,0 +1,24 @@
+.order__status {
+    font-size: 13px;
+    padding: 3px 7px;
+    border-radius: 6px;
+    font-weight: 700;
+    &--waiting {
+        // background: #fec000;
+        color: #555;
+    }
+
+    &--processing {
+        background: var(--purple-600);
+        color: white;
+    }
+
+    &--shipping {
+        background: #089321;
+        color: white;
+    }
+    &--finish {
+        background: #0cc12d;
+        color: white;
+    }
+}

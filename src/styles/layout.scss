@@ -1,0 +1,55 @@
+body {
+    font-size: var(--fs-text-medium);
+    background: var(--dim-grey);
+}
+
+
+.uni-brand-text {
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.uni-brand-text--domain {
+    font-weight: 200;
+}
+
+
+a {
+    text-decoration: none;
+    &--underline {
+        text-decoration: underline;
+    }
+}
+
+.p-m-safe-area {
+    padding-block: 10px;
+}
+
+.title {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    &.h3 {
+        font-size: 18px;
+    }
+    &.h1 {
+        font-size: 22px;
+    }
+    &.h2 {
+        font-size: 20px;
+    }
+    &.h4 {
+        font-size: 16px;
+    }
+}
+
+
+.text-two-line {
+    overflow: hidden;
+    display: -webkit-box;
+    /* display 2 lines only */
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

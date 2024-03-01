@@ -1,0 +1,41 @@
+.uikit-table {
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.08), 0 0 0 1px rgba(172,181,185,.16);
+    border-radius: 8px;
+    background: #fff;
+    tr > th, tr > td {
+        background: #fff !important;
+        &::before {
+            display: none;
+        }
+    }
+
+    &__body {
+        padding: 5px;
+    }
+
+    &__tabs {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        border-bottom: 1px solid var(--color-border-1);
+        font-size: 15px;
+        &__item {
+            border-bottom: 2px solid transparent;
+            padding: 12px 20px;
+            box-sizing: border-box;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            user-select: none;
+            opacity: .7;
+            &--active {
+                border-color: var(--purple-600);
+                font-weight: 600;
+                opacity: 1;
+                color: var(--purple-600);
+            }
+            &:hover {
+                border-color: var(--purple-600);
+            }
+        }
+    }
+}

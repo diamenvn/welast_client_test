@@ -1,0 +1,20 @@
+.sidebar {
+    border-right: 1px solid var(--color-border-1);
+    position: fixed;
+    top: var(--default-header-height);
+    height: 100%;
+    &--exist-annoucement {
+        top: calc(var(--default-header-height) + var(--annountcement-height));
+    }
+    &--layout {
+        min-width: var(--sidebar-min-max-width);
+        max-width: var(--sidebar-min-max-width);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+      display: none;
+      --sidebar-min-max-width: 0px
+    }
+  }

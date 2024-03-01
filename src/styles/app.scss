@@ -1,0 +1,29 @@
+@import "./base.scss";
+@import "./layout.scss";
+@import "./override.scss";
+
+:root {
+    --dim-grey: rgb(243, 243, 246);
+    --annountcement-height: 0px;
+    --default-header-height: 50px;
+    --fs-text-small: 12px;
+    --fs-text-medium: 14px;
+    --fs-text-large: 16px;
+    --fw-bold: 600;
+    --color-border-1: #E3E7E8;
+    --sidebar-min-max-width: 210px;
+    --blue-600: #0084D1;
+    --purple-600: #5966cd;
+    --neutral-600: #5E6A6E;
+    --neutral-800: #363F44;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-ring-offset-shadow: 0 0 #0000;
+    --tw-ring-shadow: 0 0 #0000;
+    --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / .05);
+
+    @media only screen and (max-width: 768px) {
+        --sidebar-min-max-width: 0px;
+      }
+
+}
+
