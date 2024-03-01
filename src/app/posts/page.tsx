@@ -37,9 +37,6 @@ const PostPage = (props: IPostPageProps) => {
     </Row>
   );
 
-  console.log(posts);
-  
-
   const dataSource = useMemo(() => {
     return posts;
   }, [posts]);

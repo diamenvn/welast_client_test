@@ -2,6 +2,7 @@
 import { Button, Col, Form, Input, Row } from "antd";
 import { useEffect } from "react";
 import { postsModel } from "./model";
+import { IModelPostItemProps } from "@/interfaces";
 
 const AddPost = ({ onFinishForm }: { onFinishForm: () => void }) => {
   const [form] = Form.useForm();
@@ -10,7 +11,7 @@ const AddPost = ({ onFinishForm }: { onFinishForm: () => void }) => {
     return () => form.resetFields();
   }, []);
 
-  const onFinish = async (values: { postTitle: string; postContent: string; author?: string }) => {
+  const onFinish = async (values: IModelPostItemProps) => {
     postsModel.updateState({
       ...postsModel.state,
       posts: [...postsModel.state.posts, values],

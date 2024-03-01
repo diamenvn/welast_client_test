@@ -1,6 +1,6 @@
 
 
-interface IModelPostItemProps {
+export interface IModelPostItemProps {
     postTitle: string
     postContent: string
     author?: string

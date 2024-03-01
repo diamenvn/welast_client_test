@@ -18,4 +18,4 @@ export const SIDEBAR_CONFIG_STYLES = {
   fontWeight: 500,
 };
 
-export const SIDEBAR_SELECTED_DEFAULT: string[] = ['store'];
+export const SIDEBAR_SELECTED_DEFAULT: string[] = ['posts'];
