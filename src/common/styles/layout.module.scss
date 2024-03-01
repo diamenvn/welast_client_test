@@ -56,6 +56,9 @@
         display: flex;
         align-items: center;
         height: 100%;
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
     }
     &__input-search {
         width: 300px;
@@ -67,13 +70,10 @@
         padding-left: 40px;
         box-shadow: none !important;
         border: none;
-    }
-
-    @media only screen and (max-width: 768px) {
-        &__item {
+        @media only screen and (max-width: 768px) {
             display: none;
         }
-      }
+    }
 }
 
 
