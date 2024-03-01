@@ -24,4 +24,4 @@ export const POST_CONFIG = [
         postContent: 'Trong Thông điệp Liên bang ngày 29/2, Tổng thống Vladimir Putin cáo buộc phương Tây đang tìm cách làm suy yếu Nga. Ông cảnh báo hậu quả của việc can thiệp vào Liên bang Nga hiện nay sẽ thảm khốc hơn so với những giai đoạn trước và có nguy cơ dẫn đến chiến tranh hạt nhân.',
         author: 'Vnexpress'
     }
-]
+];

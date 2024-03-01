@@ -7,6 +7,10 @@ import { POST_CONFIG } from "@/config/posts.config";
 import { Table } from "@/uikit";
 import { Button, Col, Modal, Row } from "antd";
 import { useMemo, useState } from "react";
+import AddPost from "./_form";
+import { connect } from "foca";
+import { postsModel } from "./model";
+import { IPostPageProps } from "@/interfaces";
 
 const description = (
   <span>
@@ -16,7 +20,8 @@ const description = (
   </span>
 );
 
-const PostPage = () => {
+const PostPage = (props: IPostPageProps) => {
+  const { posts } = props;
   const [openForm, setOpenForm] = useState<boolean>(false);
   const addPost = () => {
     setOpenForm(true);
@@ -32,19 +37,28 @@ const PostPage = () => {
     </Row>
   );
 
+  console.log(posts);
+  
+
   const dataSource = useMemo(() => {
-    return POST_CONFIG;
-  }, [POST_CONFIG]);
+    return posts;
+  }, [posts]);
 
   return (
     <Content>
       <HeaderContentLayout title="Danh sách bài viết" rightContent={rightContent} description={description} />
       <Table columns={POSTS_TABLE_COLUMNS} dataSource={dataSource} />
-      <Modal onCancel={() => setOpenForm(false)} open={openForm}>
-        <span>Không viết kịp ạ, hết giờ mất rồi :(</span>
+      <Modal onCancel={() => setOpenForm(false)} footer={null} open={openForm}>
+        <AddPost onFinishForm={() => setOpenForm(false)} />
       </Modal>
     </Content>
   );
 };
 
-export default PostPage;
+const mapStateToProps = () => {
+  return {
+    posts: postsModel.state.posts,
+  };
+};
+
+export default connect(mapStateToProps)(PostPage);
