@@ -1,8 +1,8 @@
-import { Table as TableAntd } from 'antd';
-import style from './style.module.scss';
-import { bemModule } from '@jahed/bem';
-import { ITableTabProps } from '@/interfaces';
-import { useMemo } from 'react';
+import { Table as TableAntd } from "antd";
+import style from "./style.module.scss";
+import { bemModule } from "@jahed/bem";
+import { ITableTabProps } from "@/interfaces";
+import { useMemo } from "react";
 
 const bem = bemModule(style);
 
@@ -22,9 +22,9 @@ const TableTabs = (props: Props) => {
   }, [tabs.items, active]);
 
   return (
-    <ul className={bem('uikit-table__tabs')}>
+    <ul className={bem("uikit-table__tabs")}>
       {tabItems.map((tab) => (
-        <li key={tab.value} onClick={() => tab.onClick && tab.onClick(tab.value)} className={bem('uikit-table__tabs__item', { active: tab.active })}>
+        <li key={tab.value} onClick={() => tab.onClick && tab.onClick(tab.value)} className={bem("uikit-table__tabs__item", { active: tab.active })}>
           {tab.title} <span>({tab.count})</span>
         </li>
       ))}

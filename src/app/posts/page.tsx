@@ -3,7 +3,6 @@
 import Content from "@/common/components/layout/content.layout";
 import HeaderContentLayout from "@/common/components/layout/header-content.layout";
 import { POSTS_TABLE_COLUMNS } from "@/constants/posts.constant";
-import { POST_CONFIG } from "@/config/posts.config";
 import { Table } from "@/uikit";
 import { Button, Col, Modal, Row } from "antd";
 import { useMemo, useState } from "react";
@@ -58,4 +57,4 @@ const mapStateToProps = () => {
   };
 };
 
-export default connect(mapStateToProps)(PostPage);
+export default connect(mapStateToProps)(PostPage as any) as any;
