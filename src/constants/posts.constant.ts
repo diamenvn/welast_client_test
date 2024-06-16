@@ -1,22 +1,22 @@
 export const POSTS_TABLE_COLUMNS = [
-    {
-      title: 'Tiêu đề',
-      dataIndex: 'postTitle',
-      key: 'postTitle',
-    },
-    {
-      title: 'Nội dung',
-      dataIndex: 'postContent',
-      key: 'postContent',
-    },
-    {
-      title: 'Tác giả',
-      dataIndex: 'author',
-      key: 'author',
-    },
-    {
-        title: '',
-        dataIndex: 'action',
-        key: 'action',
-      },
-  ];
+  {
+    title: "Name",
+    dataIndex: "name",
+    key: "name",
+  },
+  {
+    title: "Description",
+    dataIndex: "description",
+    key: "description",
+  },
+  {
+    title: "Language",
+    dataIndex: "language",
+    key: "language",
+  },
+  {
+    title: "Forks count",
+    dataIndex: "forks_count",
+    key: "forks_count",
+  },
+];

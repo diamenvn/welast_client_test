@@ -16,8 +16,8 @@ const HeaderLeftLayout: React.FC<ScriptProps> = () => {
         <div className={bem("header__item")}>
           <Link href={"/"}>
             <div className="d-flex align-items-center h-100">
-              <span className="uni-brand-text ms-1">Block</span>
-              <span className="uni-brand-text uni-brand-text--domain">odyssey</span>
+              <span className="uni-brand-text ms-1">Welast</span>
+              <span className="uni-brand-text uni-brand-text--domain">test</span>
             </div>
           </Link>
         </div>
@@ -29,13 +29,7 @@ const HeaderLeftLayout: React.FC<ScriptProps> = () => {
               <span className={bem("header__search-icon")}>
                 <SearchOutlined sizes={"20px"} />
               </span>
-              <input
-                className={classNames([
-                  bem("header__input-search"),
-                  "form-control",
-                ])}
-                placeholder="Tìm kiếm trên ứng dụng"
-              />
+              <input className={classNames([bem("header__input-search"), "form-control"])} placeholder="Tìm kiếm trên ứng dụng" />
             </div>
           </div>
         </div>
